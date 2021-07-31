@@ -170,7 +170,7 @@
     .price-total {
         margin: 12px 0;
     }
-    .product-name {
+    .cart-detail-content .product-name {
         display: block;
         width: 100%;
         line-height: 40px;
@@ -192,11 +192,11 @@
         border: 1px solid #b7b7b7;
         border-radius: 2px;
     }
-    .product-code,
-    .product-img,
-    .product-name,
-    .product-total,
-    .product-operation {
+    .cart-detail-content .product-code,
+    .cart-detail-content .product-img,
+    .cart-detail-content .product-name,
+    .cart-detail-content .product-total,
+    .cart-detail-content .product-operation {
         width: 100%;
         line-height: 40px;
     }

@@ -44,12 +44,12 @@
     color: #727272;
 }
 
-.product-code,
-.product-img,
-.product-number,
-.product-total,
-.product-price,
-.product-operation {
+.cart-detail-content .product-code,
+.cart-detail-content .product-img,
+.cart-detail-content .product-number,
+.cart-detail-content .product-total,
+.cart-detail-content .product-price,
+.cart-detail-content .product-operation {
     width: var(--cart-width);
 }
 
