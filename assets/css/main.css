@@ -224,7 +224,6 @@ body {
 .arrow-right {
     position: absolute;
     top: 50%;
-    transform: translateY(-50%);
     width: 36px;
     height: 48px;
     line-height: 48px;
@@ -243,12 +242,12 @@ body {
 }
 
 .arrow-left {
-    transform: translateX(-50%);
+    transform: translate(-50%, -50%);
     left: 0;
 }
 
 .arrow-right {
-    transform: translateX(50%);
+    transform: translate(50%, -50%);
     right: 0;
 }
 

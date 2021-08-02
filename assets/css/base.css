@@ -31,6 +31,7 @@ html {
 .header {
     background-color: var(--primary-color);
     max-height: 80px;
+    position: relative;
 }
 
 .header-content {
@@ -76,11 +77,55 @@ html {
 
 .search-link {
     padding: 12px;
+    cursor: pointer;
 }
 
 .search-logo {
     font-size: 1.5rem;
     color: var(--white-color);
+}
+
+.search-box {
+    position: absolute;
+    top: calc(100% + 1px);
+    right: 75px;
+    z-index: 1;
+    background-color: var(--primary-color);
+    padding: 8px;
+    border-radius: 32px;
+    opacity: 0;
+    transform: scale(0);
+    transform-origin: top right;
+    transition: all 0.4s;
+}
+
+#search-box-input:checked~.search-box {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.search-input {
+    font-size: 1.4rem;
+    color: rgba(51, 51, 51, 0.8);
+    padding: 5px 8px;
+    border-radius: 12px;
+    border: none;
+}
+
+.search-btn {
+    padding: 8px;
+    background-color: var(--white-color);
+    border-radius: 50%;
+    font-size: 1.2rem;
+    color: rgba(51, 51, 51, 0.8);
+    margin-left: 4px;
+    cursor: pointer;
+    text-align: center;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.search-btn:hover {
+    background-color: #ccc;
 }
 
 .cart {
@@ -367,6 +412,7 @@ html {
     font-size: 1.4rem;
     line-height: 26px;
     color: var(--white-color);
+    transition: all 10s;
 }
 
 .footer-contact {
@@ -375,6 +421,7 @@ html {
 
 .footer-contact:hover a {
     opacity: 0.8;
+    text-decoration: underline;
 }
 
 .footer-copyright {
